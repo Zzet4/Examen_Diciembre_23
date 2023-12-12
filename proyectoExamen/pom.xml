@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.proyecto.examen.maven</groupId>
+	<artifactId>proyectoExamen</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<!--LA ETIQUETA PADRE ES <PROJECT></PROJECT>-->
+
+	<!--CON ESTAS ETIQUETAS LE INDICAMOS LA VERSIÓN DE COMPILACIÓN-->
+
+
+	<dependencies><!--LA ETIQUETA DEPENDENCIES RECOGERÁ TODAS LAS DEPENDENCIAS, EN ESTE CASO:
+					 PrimerProyecto (Para poder acceder a las clases del PrimerProyecto)
+					 JUNIT (para las pruebas unitarias),
+					 LOG4J (para los logs), 
+					 PERSISTENCE (de hibernate)-->
+
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency><!--Dependencia de log4j para los logs-->
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.21.1</version>
+		</dependency>
+
+
+		<dependency><!--Dependencia de hibernate-->
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core-jakarta</artifactId>
+			<version>5.6.12.Final</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc10 -->
+		<dependency><!--Dependencia de oracle-->
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc10</artifactId>
+			<version>19.21.0.0</version>
+		</dependency>
+
+	</dependencies>
+</project>

@@ -42,7 +42,7 @@
     <persistence-unit name="EjemploOracle" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- entidades o entities -->
-        <class>XXXXXXXXXXXXXXXXXXXXXXXX</class>
+        <class>proyectoExamen.es.curso.parte_4.Contrato</class>
         <class>XXXXXXXXXXXXXXXXXXXXXXXX</class>
           
         

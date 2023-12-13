@@ -45,7 +45,7 @@
 <!-- 		</Logger>  -->
 		
 		
-		<Root level="error">
+		<Root level="trace">
 			<AppenderRef ref="LogToConsole" />
 			<AppenderRef ref="rollingFile"/>
 		</Root>
